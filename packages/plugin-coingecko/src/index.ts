@@ -1,7 +1,7 @@
 import { Plugin } from '@elizaos/core';
 import { getCoinData } from './actions/getCoinData';
 
-const CoinGeckoPlugin: Plugin = {
+const coinGeckoPlugin: Plugin = {
   description: "Pull marketdata from coinGecko",
   name: 'coingecko',
   actions: [getCoinData],
@@ -11,4 +11,4 @@ const CoinGeckoPlugin: Plugin = {
   clients: []
 };
 
-export default CoinGeckoPlugin;
+export default coinGeckoPlugin;
