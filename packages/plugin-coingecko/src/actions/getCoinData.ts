@@ -1,4 +1,9 @@
-export const getCoinData = async ({ coinId }: { coinId: string }) => {
+import { Action } from '@elizaos/core';
+
+export const getCoinData: Action = {
+  name: 'getCoinData',
+  description: 'Fetch coin data from CoinGecko API',
+  handler: async ({ coinId }: { coinId: string }) => {
     const apiUrl = `https://api.coingecko.com/api/v3/coins/${coinId}`;
 
     try {
@@ -21,4 +26,5 @@ export const getCoinData = async ({ coinId }: { coinId: string }) => {
         error: error.message || 'Failed to fetch coin data',
       };
     }
-  };
+  },
+};
