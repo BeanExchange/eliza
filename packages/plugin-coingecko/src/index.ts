@@ -9,3 +9,4 @@ const coingeckoPlugin: Plugin = {
 };
 
 export default coingeckoPlugin;
+export {coingeckoPlugin as coingeckoPlugin };
