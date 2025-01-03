@@ -7,9 +7,9 @@ import {
     Action
 } from "@elizaos/core";
 
-export const getCoinData: Action = {
-  name: 'get_price',
-  description: 'Fetch coin data from CoinGecko API',
+export const getPrice: Action = {
+  name: 'getPrice',
+  description: 'Get coin price from CoinGecko API',
 //   handler: async ({ coinId }: { coinId: string }) => {
 //     const apiUrl = `https://api.coingecko.com/api/v3/coins/${coinId}`;
 
@@ -57,9 +57,7 @@ export const getCoinData: Action = {
     },
     validate: async (runtime: IAgentRuntime, message: Memory) => {
         console.log(">>>>>>> Validating marketdata query with message >> %s", JSON.stringify(message));
-        return false;
+        return true;
     },
-    similes:[
-        "fetch_price", "get_price", "load_price", "price_of", "market_price"
-    ]
+    similes:["fetch_price", "get_price", "load_price", "price_of", "market_price"]
 };
