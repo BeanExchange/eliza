@@ -42,7 +42,7 @@ export const getCoinData: Action = {
         _options: { [key: string]: unknown },
         callback?: HandlerCallback
     ): Promise<boolean> => {
-        elizaLogger.log("Processing market query ...." + JSON.stringify(message));
+        elizaLogger.log(">>>>>>> Handle with message %s and state %s", JSON.stringify(message), JSON.stringify(state));
         if (callback) {
             callback({
                 text: `Successfully query`,
@@ -56,7 +56,8 @@ export const getCoinData: Action = {
         return true;
     },
     validate: async (runtime: IAgentRuntime, message: Memory) => {
-        console.log("Validating marketdata query:");
+        console.log(">>>>>>> Validating marketdata query with message >> %s", JSON.stringify(message));
+        return false;
     },
     similes:[
         "fetch_price", "get_price", "load_price", "price_of", "market_price"
