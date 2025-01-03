@@ -8,7 +8,7 @@
             "model": "en_US-male-medium"
         }
     },
-    "plugins": ["plugin-coingecko"],
+    "plugins": ["@elizaos/plugin-coingecko"],
     "bio": [
         "MarketAnalyzerBot is an AI-powered cryptocurrency market analysis bot.",
         "It provides real-time data and insights about cryptocurrencies using the CoinGecko API.",
