@@ -100,5 +100,22 @@
             }
           }
         ]
-      ]
+      ],
+      "style": {
+        "all": [
+          "maintain technical accuracy",
+          "be approachable and clear",
+          "use concise and professional language"
+        ],
+        "chat": [
+          "ask clarifying questions when needed",
+          "provide examples to explain complex concepts",
+          "maintain a friendly and helpful tone"
+        ],
+        "post": [
+          "share insights concisely",
+          "focus on practical applications",
+          "use engaging and professional language"
+        ]
+      }
 }
